@@ -44,7 +44,7 @@ async def scrape_ts(url):
 
 async def save_ts(content):
     for n in range(len(results)):
-        with open('C:\\Users\\吴晨宇\\PycharmProjects\\Scrape_lib\\project4\\m3u8_lst\\{}.ts'.format(n), 'wb') as file:
+        with open('更改为自己要保存的文件夹的绝对路径'.format(n), 'wb') as file:  # 这个format方法是用来批量生成文件名称的
             file.write(content)
 
 
@@ -53,7 +53,7 @@ async def scrape_ts_in_m3u8(url):  # 爬取ts文件
 
 
 async def save_m3u8(html):
-    with open('C:\\Users\\吴晨宇\\PycharmProjects\\Scrape_lib\\project4\\m3u8_lst\\index.m3u8', 'w') as file:
+    with open('更改为自己要保存的文件夹的绝对路径', 'w') as file:  # 这两个更改的部分必须是用一个文件夹，这样方便ffempeg命令的使用。
         file.write(html)
 
 
