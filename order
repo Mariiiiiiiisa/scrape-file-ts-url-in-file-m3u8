@@ -1,0 +1,1 @@
+F:\Tools\ffmpeg\ffmpeg-master-latest-win64-gpl-shared\bin\ffmpeg.exe -allowed_extensions ALL -protocol_whitelist "file,http,crypto,tcp,https,tls" -i F:\Pycharm\PycharmProjects\Scrape_lib\project4\m3u8_lst\index.m3u8 -c copy -bsf:a aac_adtstoasc 1.mp4
